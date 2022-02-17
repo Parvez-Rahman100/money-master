@@ -18,47 +18,49 @@
         <h1 class="text-center mt-4 mb-4 text-primary">Your Personal Money Counter</h1>
     </header>
     <section class="container">
-        <div class="row justify-content-between align-items-center text-center">
-            <div class="col-lg-6 my-4">
-                <img class="img-fluid" src="assests/money.jpg" alt="">
-            </div>
-            <div class="col-lg-5 my-4 bg-primary">
+        <div class="py-5 ">
+            <div class="row justify-content-between align-items-center text-center text-white ">
+                <div class="col-lg-6 my-4">
+                    <img class="img-fluid" src="assests/money.jpg" alt="">
+                </div>
+                <div class="col-lg-5 my-4 bg-success shadow-lg p-3 mb-5  rounded">
 
 
-                <!-- Income Area  -->
-                <h4>Income</h4>
-                <form>
-                    <label for="income-input">Income :</label>
-                    <input class="my-2" id="income-input" type="text">
-                </form>
+                    <!-- Income Area  -->
+                    <h4>Income</h4>
+                    <form>
+                        <label for="income-input">Income :</label>
+                        <input class="my-2" id="income-input" type="text">
+                    </form>
 
 
 
-                <!-- Expense Area  -->
-                <h4>Expenses</h4>
-                <form>
-                    <label for="food-input">Food :</label>
-                    <input class="my-2" id="food-input" type="text">
-                    <br>
-                    <label for="rent-input">Rent :</label>
-                    <input class="my-2" id="rent-input" type="text">
-                    <br>
-                    <label for="cloths-input">Cloths :</label>
-                    <input class="my-2" id="cloths-input" type="text">
-                    <br>
-                </form>
-                <button class="btn btn-danger rounded" onclick="expenseTotal()">Calculate</button>
-                <h4 class="my-2">Total Expenses: <span id="expense-total">00</span></h4>
-                <h4 class="my-2">Balance: <span id="balance-total">00</span> </h4>
+                    <!-- Expense Area  -->
+                    <h4>Expenses</h4>
+                    <form>
+                        <label for="food-input">Food :</label>
+                        <input class="my-2" id="food-input" type="text">
+                        <br>
+                        <label for="rent-input">Rent :</label>
+                        <input class="my-2" id="rent-input" type="text">
+                        <br>
+                        <label for="cloths-input">Cloths :</label>
+                        <input class="my-2" id="cloths-input" type="text">
+                        <br>
+                    </form>
+                    <button class="btn btn-danger rounded" onclick="expenseTotal()">Calculate</button>
+                    <h4 class="my-2">Total Expenses: <span id="expense-total">00</span></h4>
+                    <h4 class="my-2">Balance: <span id="balance-total">00</span> </h4>
 
-                <!-- Savings Area  -->
+                    <!-- Savings Area  -->
 
-                <label for="save-input">Save: </label>
-                <input id="save-input" type="text">
-                <p class="d-inline">%</p>
-                <button onclick="savings()" class="btn btn-danger rounded">Save</button>
-                <h4>Saving Amount: <span id="save-amount">00</span> </h4>
-                <h4>Remaining Balance: <span id="remaining-amount">00</span> </h4>
+                    <label for="save-input">Save: </label>
+                    <input id="save-input" type="text">
+                    <p class="d-inline">%</p>
+                    <button onclick="savings()" class="btn btn-danger rounded">Save</button>
+                    <h4>Saving Amount: <span id="save-amount">00</span> </h4>
+                    <h4>Remaining Balance: <span id="remaining-amount">00</span> </h4>
+                </div>
             </div>
         </div>
     </section>
